@@ -23,6 +23,10 @@ div.door {
     cursor:pointer;
 }
 
+.stopDoor {    
+    cursor:not-allowed !important;
+}
+
  .hover{    -webkit-animation: example 0.75s ease 0s  ;
         animation: example 0.75s ease   1;
     -webkit-animation-fill-mode: forwards;
