@@ -5,7 +5,7 @@ body {
 div.calendar-wrapper {
 	max-width: 935px;
 	height:900px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 .holder{
