@@ -14,11 +14,10 @@ $(".door").click(function(){
     }
 })
 
-$("p").click(function(){$(".tile").removeClass('hover')})
+//$("p").click(function(){$(".tile").removeClass('hover')})
 
 $(".door-content .contentMag").click(
     function(){
-            //$(this).attr('id', 'largeContent');
             $(this).closest('.door-content').toggleClass("largeContent");
             console.log(m);
     }
