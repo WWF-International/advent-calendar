@@ -18,6 +18,7 @@ $(".door").click(function(){
 
 $(".door-content .contentMag").click(
     function(){
+            //$(".door-content").removeClass("largeContent");
             $(this).closest('.door-content').toggleClass("largeContent");
             console.log(m);
     }
