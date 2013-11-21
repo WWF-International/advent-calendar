@@ -1,7 +1,125 @@
 body {
-    font-family: Arial;
+	margin: none;
 }
 
-h1 {
-    color: blue;
+div.calendar-wrapper {
+	max-width: 935px;
+	height:900px;
+	margin: 0px auto;
+}
+
+.holder{
+	position:relative;
+	margin: 2%;
+	float:left;
+}
+
+div.door {
+    background:red;
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    position:absolute;
+    cursor:pointer;
+}
+
+ .hover{    -webkit-animation: example 0.75s ease 0s  ;
+        animation: example 0.75s ease   1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+@-webkit-keyframes example {
+
+    from {
+       -webkit-transform: perspective(300px) rotateY(0deg);
+        -webkit-transform-origin: 0% 50%;
+    }
+        to {
+       -webkit-transform: perspective(300px) rotateY(-85deg);
+       -webkit-transform-origin: 0% 50%;
+       
+        
+    }
+}
+
+@keyframes example {
+
+    from {
+       transform: perspective(300px) rotateY(0deg);
+       transform-origin: 0% 50%;
+    }
+        to {
+       transform: perspective(300px) rotateY(-85deg);
+       transform-origin: 0% 50%;
+      
+        
+    }
+}
+
+.door-content{
+    background:white;
+    border:solid black 1px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.holder#day1 {width:15%; height:4em;}
+.holder#day2 {width:24%; height:6em;}
+.holder#day3 {width:15%; height:6em;}
+.holder#day4 {width:5%; height:5em;}
+.holder#day5 {width:15%; height:3em;}
+.holder#day6 {width:20%; height:4em;}
+.holder#day7 {width:18%; height:3em;}
+.holder#day8 {width:15%; height:3em;}
+.holder#day9 {width:24%; height:3em;}
+.holder#day10 {width:5%; height:4em;}
+.holder#day11 {width:24%; height:6em;}
+.holder#day12 {width:10%; height:4em;}
+.holder#day13 {width:5%; height:2em;}
+.holder#day14 {width:5%; height:2em;}
+.holder#day15 {width:24%; height:6em;}
+.holder#day16 {width:15%; height:6em;}
+.holder#day17 {width:15%; height:3em;}
+.holder#day18 {width:22%; height:3em;}
+.holder#day19 {width:9%; height:5em;}
+.holder#day20 {width:15%; height:3em;}
+.holder#day21 {width:5%; height:2em;}
+.holder#day22 {width:15%; height:5em;}
+.holder#day23 {width:15%; height:4em;}
+.holder#day24 {width:60%; height:5em;}
+
+.largeContent {
+    width:280px;
+    height:280px;
+    padding:9px;
+    top:-100px;
+    left:-100px;
+    z-index:1001;
+}
+
+.content p { position: relative; }
+
+.transition {
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.contentMag {
+    position:absolute;
+    top:0;
+    right:0;
+    background:black;
+    width:20px;
+    height:20px;
 }
