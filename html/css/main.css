@@ -91,12 +91,13 @@ body {
     cursor:pointer;
     overflow:hidden;
 }
+
 .largeContent {
-    width:280px;
-    height:280px;
+    width:200%;
+    height:200%;
     padding:9px;
-    top:-100px;
-    left:-100px;
+    top:-50%;
+    left:-50%;
     z-index:1001;
 }
 
