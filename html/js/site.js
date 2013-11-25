@@ -7,7 +7,12 @@ var date = new Date(),
 $(".door").hover(function(){
     var thisDate = $(this).data("date");
     if(d<thisDate && m >=11){
-        $(this).toggleClass("errorDoor");
+        $(".message").remove();
+        $(this).append( "<p class='message'>Error message here</p>" );
+    }
+    else {
+        $(".message").remove();
+        $(this).append( "<p class='message'>Click to open</p>" );
     }
 })
 
@@ -17,9 +22,7 @@ $(".door").click(function(){
         $(this).addClass('hover');
         $(".door-content").removeClass("largeContent");
         $(".contentMag").removeClass("contentMagOut");
-    } else {
-        //$(this).append( "<p class='warning'>Sorry - you can't open this door just yet.</p>" );
-    }
+    } 
 })
 
 //$("p").click(function(){$(".tile").removeClass('hover')})
