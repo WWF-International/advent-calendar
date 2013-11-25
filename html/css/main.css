@@ -97,7 +97,7 @@ body {
 
 .door-content{
     background:white;
-    border:solid black 1%;
+    border: 1% solid black;
     position:absolute;
     top:0;
     left:0;
