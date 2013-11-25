@@ -137,10 +137,17 @@ body {
     position:absolute;
     top:0;
     right:0;
-    background:black;
-    width:20px;
-    height:20px;
+    background:black url('../images/mag_in.png') 3px 3px no-repeat;
+    background:rgba(0, 0, 0, 0.8) url('../images/mag_in.png') 3px 3px no-repeat;
+    width:30px;
+    height:30px;
+    padding:3px;
 }
+
+    .contentMagOut {
+        background:black url('../images/mag_out.png') 3px 3px no-repeat;
+        background:rgba(0, 0, 0, 0.8) url('../images/mag_out.png') 3px 3px no-repeat;
+    }
 
 /* --------------------- FONT FACE ----------------- */
 @font-face {
