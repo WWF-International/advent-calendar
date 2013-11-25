@@ -58,6 +58,32 @@ body {
             top:10px;
             left:10px;
     }
+    
+    .door p.warning {
+        text-align:right;
+        position:absolute;
+            top:0;
+            right:0;
+        font: 0.75em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+        width:69%;
+        padding:3%;
+        margin:0;
+             -webkit-animation: fadeAway 1.2s ease 2s  ;
+             animation: fadeAway 1.2s ease 2;
+             -webkit-animation-fill-mode: forwards;
+             animation-fill-mode: forwards;
+    }
+    
+@-webkit-keyframes fadeAway {
+
+    from {
+        opacity:1;
+    }
+    
+    to {
+        opacity:0;
+    }
+}
 
     .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
 
@@ -80,10 +106,11 @@ font: normal 0.7em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
     cursor:not-allowed !important;
 }
 
- .hover{    -webkit-animation: openDoor 2.6s ease 0s  ;
-        animation: openDoor 2.6s ease 0;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+ .hover{
+     -webkit-animation: openDoor 2.6s ease 0s  ;
+     animation: openDoor 2.6s ease 0;
+     -webkit-animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
 }
 
 

@@ -11,7 +11,7 @@ $(".door").click(function(){
         $(".door-content").removeClass("largeContent");
         $(".contentMag").removeClass("contentMagOut");
     } else {
-        $(this).addClass("stopDoor");
+        $(this).append( "<p class='warning'>Sorry - you can't open this door just yet.</p>" );
     }
 })
 
