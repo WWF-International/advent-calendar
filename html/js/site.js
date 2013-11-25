@@ -9,6 +9,7 @@ $(".door").click(function(){
     if(d>=thisDate && m >=11){
         $(this).addClass('hover');
         $(".door-content").removeClass("largeContent");
+        $(".contentMag").removeClass("contentMagOut");
     } else {
         $(this).addClass("stopDoor");
     }
