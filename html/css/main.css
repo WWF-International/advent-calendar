@@ -41,7 +41,6 @@ body {
     .holder#day23 {}
     .holder#day24 {}
 
-
 .door {
     background:red;
     width: 100%;
@@ -49,7 +48,10 @@ body {
     z-index:100;
     position:absolute;
     cursor:pointer;
+    font: normal 2.7em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
 }
+
+    .holder#day11 .door {background:url('../images/snow_leo_preview.jpg');}
 
 .stopDoor {    
     cursor:not-allowed !important;
@@ -106,7 +108,10 @@ body {
     height:98%;
     cursor:pointer;
     overflow:hidden;
+    font: normal 1.5em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
 }
+
+    .door-content img { width:100%; height:auto; }
 
 .largeContent {
     width:200%;
@@ -133,4 +138,16 @@ body {
     background:black;
     width:20px;
     height:20px;
+}
+
+/* --------------------- FONT FACE ----------------- */
+@font-face {
+    font-family: 'WWFRegular';
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot');
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.woff') format('woff'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.ttf') format('truetype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.svg#WWFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
