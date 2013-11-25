@@ -98,7 +98,11 @@ padding: 0.5em 5%;
 background: black;
 background: rgba(0, 0, 0, 0.65);
 color: white;
-font: normal 0.7em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+font: normal 0.6em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+}
+
+.errorDoor:hover:after {
+content: "Not openable yet.";
 }
 
 

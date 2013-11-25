@@ -4,6 +4,13 @@ var date = new Date(),
     d = date.getDate(),
     m = date.getMonth() + 1;
 
+$(".door").hover(function(){
+    var thisDate = $(this).data("date");
+    if(d<thisDate && m >=11){
+        $(this).toggleClass("errorDoor");
+    }
+})
+
 $(".door").click(function(){
     var thisDate = $(this).data("date");
     if(d>=thisDate && m >=11){
@@ -11,7 +18,7 @@ $(".door").click(function(){
         $(".door-content").removeClass("largeContent");
         $(".contentMag").removeClass("contentMagOut");
     } else {
-        $(this).append( "<p class='warning'>Sorry - you can't open this door just yet.</p>" );
+        //$(this).append( "<p class='warning'>Sorry - you can't open this door just yet.</p>" );
     }
 })
 
