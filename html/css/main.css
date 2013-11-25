@@ -99,7 +99,7 @@ body {
 
 .door-content{
     background:white;
-    border: 1% solid black;
+    padding:1%;
     position:absolute;
     top:0;
     left:0;
@@ -111,7 +111,9 @@ body {
     font: normal 1.5em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
 }
 
-    .door-content img { width:100%; height:auto; }
+    .door-content img { width:100%; height:auto; margin:10px 0;}
+    
+    .door-content p { font: normal 0.7em / 1em Helvetica,Arial,sans-serif; margin:0; padding:0;}
 
 .largeContent {
     width:200%;
