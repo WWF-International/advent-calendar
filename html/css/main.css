@@ -4,9 +4,8 @@ body {
 
 .calendar-wrapper {
 	max-width: 935px;
-	height:900px;
 	margin: 0 auto;
-	padding:0;
+	padding:40px 0;
 }
 
 .holder{
@@ -56,23 +55,40 @@ body {
     cursor:not-allowed !important;
 }
 
- .hover{    -webkit-animation: example 0.75s ease 0s  ;
-        animation: example 0.75s ease   1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+ .hover{
+     -webkit-animation: example 2.8s ease 0s  ;
+     animation: example 2.8s ease   0;
+     -webkit-animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
 }
 
 
 
 @-webkit-keyframes example {
 
-    from {
-       -webkit-transform: perspective(640) rotateY(0deg);
+    0% {
+        -webkit-transform: perspective(1000) rotateY(0deg);
         -webkit-transform-origin: 0% 50%;
+        opacity:1;
     }
-        to {
-       -webkit-transform: perspective(640) rotateY(-95deg);
+    
+    30% {
+       -webkit-transform: perspective(1000) rotateY(-95deg);
        -webkit-transform-origin: 0% 50%;
+        opacity:1;
+    }
+    
+    
+    40% {
+       -webkit-transform: perspective(1000) rotateY(-95deg);
+       -webkit-transform-origin: 0% 50%;
+        opacity:1;
+    }
+    
+    100% {
+       -webkit-transform: perspective(1000) rotateY(-95deg);
+       -webkit-transform-origin: 0% 50%;
+        opacity:0;
        
         
     }
