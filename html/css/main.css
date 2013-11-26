@@ -4,7 +4,6 @@ body {
 
 .calendar-wrapper {
 	max-width: 935px;
-	height:900px;
 	margin: 0 auto;
 	padding:0;
 }
@@ -17,7 +16,7 @@ body {
 	height:12em;
 }
 
-    .holder#day1 { height:26em; float:right; }
+    .holder#day1 { height:26em; float:right; margin-right:3%; }
     .holder#day2 { height:26em; }
     .holder#day3 {}
     .holder#day4 {}
@@ -59,56 +58,27 @@ body {
             left:10px;
     }
     
-    .door p.warning {
-        text-align:right;
-        position:absolute;
-            top:0;
-            right:0;
-        font: 0.75em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
-        width:69%;
-        padding:3%;
+    .door p.message {display:none;}
+    
+    .door:hover p.message {
+        display:block;
+        /*content: "Click to open.";*/
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        height: 1em;
+        padding: 0.5em 5%;
+        background: black;
+        background: rgba(0, 0, 0, 0.65);
+        color: white;
+        font: normal 0.6em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
         margin:0;
-             -webkit-animation: fadeAway 1.2s ease 2s  ;
-             animation: fadeAway 1.2s ease 2;
-             -webkit-animation-fill-mode: forwards;
-             animation-fill-mode: forwards;
     }
-    
-@-webkit-keyframes fadeAway {
 
-    from {
-        opacity:1;
-    }
-    
-    to {
-        opacity:0;
-    }
-}
-
+    .holder#day2 .door { background: white url('http://upload.wikimedia.org/wikipedia/commons/4/41/Siberischer_tiger_de_edit02.jpg') 50% 50%; }
+    .holder#day6 .door { background: white url('http://d2nyu690xzuldc.cloudfront.net/wp-content/uploads/SCR_240161_opt.jpg'); }
     .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
-
-.door:hover:after {
-content: "Click to open.";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 90%;
-height: 1em;
-padding: 0.5em 5%;
-background: black;
-background: rgba(0, 0, 0, 0.65);
-color: white;
-font: normal 0.6em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
-}
-
-.errorDoor:hover:after {
-content: "Not openable yet.";
-}
-
-
-.stopDoor {    
-    cursor:not-allowed !important;
-}
 
  .hover{
      -webkit-animation: openDoor 2.6s ease 0s  ;
@@ -162,6 +132,22 @@ content: "Not openable yet.";
     overflow:hidden;
 }
 
+    .door-content p {
+        font: normal 0.9em / 1.25em Helvetica,Arial,sans-serif;
+        float:left;
+    }
+
+    .door-content h2 {
+        font: normal 2.6em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+        margin:0 5px;
+    }
+    
+        .door-content h2 span {
+            font: normal 0.75em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+        }
+        
+    .door-content img { margin:10px 10px 10px 0; float:left;}
+
 .largeContent {
     width:200%;
     height:200%;
@@ -170,6 +156,17 @@ content: "Not openable yet.";
     left:-50%;
     z-index:1001;
 }
+
+    #day2 .largeContent { width: 160%; height: 80%; top:10%; left:-10%; }
+        #day2 .door-content {background: url('../images/popcorn02.jpg'); }
+        #day2 .door-content p {font: normal 4em / 0.95em 'WWFRegular',Helvetica,Arial,sans-serif; margin:0; padding:20px 40px;}
+
+    #day6 .largeContent { width: 140%; height: 170%; top:-35%; left:-20%;}
+        #day6 .largeContent img { width:40%; }
+
+
+    #day11 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
+        #day11 .largeContent img { width:100%; height:auto; }
 
 .content p { position: relative; }
 
@@ -191,12 +188,36 @@ content: "Not openable yet.";
     padding:3px;
 }
 
-
-
 .contentMagOut {
     background: black url('../images/mag_out.png') 3px 3px no-repeat;
     background: rgba(0, 0, 0, 0.65) url('../images/mag_out.png') 3px 3px no-repeat;
 }
+
+.fadeOut {
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(62%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    
+    height:120px;
+    width:100%;
+    position: absolute;
+        bottom:0;
+        left:0;
+}
+
+    .fadeOut:hover { color:red; }
+
+    .fadeOut p {
+        font: normal 1.35em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+        position:absolute;
+            bottom:8px;
+            right:8px;
+        margin:0;
+    }
 
 /* --------------------- FONT FACE ----------------- */
 @font-face {
