@@ -186,6 +186,11 @@ body {
     #day6 .largeContent { width: 140%; height: 170%; top:-35%; left:-20%;}
         #day6 .door-content img { width:40%; }
 
+    .holder#day7 .door { background: white url('../images/door7.jpg'); }
+    #day7 .largeContent { width: 140%; height: 200%; top:0%; left:-20%;}
+        
+    .holder#day8 .door { background: white url('../images/door8.jpg') 50% 50%; }
+
     .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
     #day11 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
         #day11 .door-content img { width:100%; height:auto; }
