@@ -6,6 +6,17 @@ body {
 	max-width: 935px;
 	margin: 0 auto;
 	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+#snowSpace {
+	background:blue;
+	position:absolute;
+	    top:0;
+	    left:0;
+    margin:0;
+    padding:0;
 }
 
 .holder{
@@ -17,7 +28,7 @@ body {
 }
 
     .holder#day1 { height:26em; float:right; margin-right:3%; }
-    .holder#day2 { height:26em; }
+    .holder#day2 {width:18%;}
     .holder#day3 {}
     .holder#day4 {}
     .holder#day5 {width:40%;}
@@ -30,7 +41,7 @@ body {
     .holder#day12 {width:18%;}
     .holder#day13 {width:18%;}
     .holder#day14 {width:18%;}
-    .holder#day15 {width:18%;}
+    .holder#day15 { height:26em; }
     .holder#day16 {width:18%;}
     .holder#day17 {width:18%;}
     .holder#day18 {}
@@ -75,10 +86,6 @@ body {
         font: normal 0.6em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
         margin:0;
     }
-
-    .holder#day2 .door { background: white url('http://upload.wikimedia.org/wikipedia/commons/4/41/Siberischer_tiger_de_edit02.jpg') 50% 50%; }
-    .holder#day6 .door { background: white url('http://d2nyu690xzuldc.cloudfront.net/wp-content/uploads/SCR_240161_opt.jpg'); }
-    .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
 
  .hover{
      -webkit-animation: openDoor 2.6s ease 0s  ;
@@ -135,6 +142,7 @@ body {
     .door-content p {
         font: normal 0.9em / 1.25em Helvetica,Arial,sans-serif;
         float:left;
+        margin:0 0 8px 0;
     }
 
     .door-content h2 {
@@ -157,16 +165,35 @@ body {
     z-index:1001;
 }
 
-    #day2 .largeContent { width: 160%; height: 80%; top:10%; left:-10%; }
-        #day2 .door-content {background: url('../images/popcorn02.jpg'); }
-        #day2 .door-content p {font: normal 4em / 0.95em 'WWFRegular',Helvetica,Arial,sans-serif; margin:0; padding:20px 40px;}
 
+
+    
+    
+    
+    .holder#day1 .door { background: white url('../images/door1.jpg') 50% 50%; }
+    #day1 .largeContent { width: 200%; height: 110%; top:-5%; left:-180%; }
+        #day1 .door-content img { width:98%;height:auto; margin:5px 1%; }
+        #day1 .largeContent img { width:48%; }
+        
+    .holder#day2 .door { background: white url('../images/door2.jpg') 50% 50%; color:white; }
+    #day2 .largeContent { width: 250%; height: 200%; top:-50%; left:-5%;}
+        
+    .holder#day3 .door { background: white url('../images/door3.jpg') 50% 50%; color:white; }
+    #day3 .largeContent { width: 650px; height: 650px; top:-5%; left:-100%; }
+        #day3 .door-content img { width:100%; }
+
+    .holder#day6 .door { background: white url('http://d2nyu690xzuldc.cloudfront.net/wp-content/uploads/SCR_240161_opt.jpg'); }
     #day6 .largeContent { width: 140%; height: 170%; top:-35%; left:-20%;}
-        #day6 .largeContent img { width:40%; }
+        #day6 .door-content img { width:40%; }
 
-
+    .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
     #day11 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
-        #day11 .largeContent img { width:100%; height:auto; }
+        #day11 .door-content img { width:100%; height:auto; }
+
+    .holder#day15 .door { background: white url('http://upload.wikimedia.org/wikipedia/commons/4/41/Siberischer_tiger_de_edit02.jpg') 50% 50%; }
+    #day15 .largeContent { width: 160%; height: 80%; top:10%; left:-10%; }
+        #day15 .door-content {background: url('../images/popcorn02.jpg'); }
+        #day15 .door-content p {font: normal 4em / 0.95em 'WWFRegular',Helvetica,Arial,sans-serif; margin:0; padding:20px 40px;}
 
 .content p { position: relative; }
 
@@ -212,12 +239,15 @@ body {
     .fadeOut:hover { color:red; }
 
     .fadeOut p {
-        font: normal 1.35em / 1em 'WWFRegular',Helvetica,Arial,sans-serif;
+        font: normal 1.35em / 1em 'WWFRegular',Helvetica,Arial,sans-serif !important;
         position:absolute;
             bottom:8px;
             right:8px;
         margin:0;
+        display:none;
     }
+
+        .largeContent .fadeOut p { display:block; }
 
 /* --------------------- FONT FACE ----------------- */
 @font-face {
