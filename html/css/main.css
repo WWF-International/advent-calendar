@@ -80,7 +80,9 @@ body {
     .holder#day6 .door { background: white url('http://d2nyu690xzuldc.cloudfront.net/wp-content/uploads/SCR_240161_opt.jpg'); }
     .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
 
- .hover{
+    .hover{opacity:0;}/*set style to use when transitions aren't available */
+    
+    .csstransitions .hover{ /* set style for csstransitions */
      -webkit-animation: openDoor 2.6s ease 0s  ;
      animation: openDoor 2.6s ease 0;
      -webkit-animation-fill-mode: forwards;
