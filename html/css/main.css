@@ -199,14 +199,14 @@ body {
         
     .holder#day8 .door { background: white url('../images/door8.jpg') 50% 50%; }
 
-    .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
-    #day11 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
-        #day11 .door-content img { width:100%; height:auto; }
-
     .holder#day15 .door { background: white url('http://upload.wikimedia.org/wikipedia/commons/4/41/Siberischer_tiger_de_edit02.jpg') 50% 50%; }
     #day15 .largeContent { width: 160%; height: 80%; top:10%; left:-10%; }
         #day15 .door-content {background: url('../images/popcorn02.jpg'); }
         #day15 .door-content p {font: normal 4em / 0.95em 'WWFRegular',Helvetica,Arial,sans-serif; margin:0; padding:20px 40px;}
+
+    .holder#day16 .door { background: white url('../images/snow_leo_preview.jpg'); }
+    #day16 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
+        #day16 .door-content img { width:100%; height:auto; }
 
 .content p { position: relative; }
 
