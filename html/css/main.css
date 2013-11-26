@@ -157,7 +157,7 @@ body {
     z-index:1001;
 }
 
-    #day2 .largeContent { width: 160%; height: 80%; top:10%; left:-30%; }
+    #day2 .largeContent { width: 160%; height: 80%; top:10%; left:-10%; }
         #day2 .door-content {background: url('../images/popcorn02.jpg'); }
         #day2 .door-content p {font: normal 4em / 0.95em 'WWFRegular',Helvetica,Arial,sans-serif; margin:0; padding:20px 40px;}
 
