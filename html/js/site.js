@@ -37,9 +37,11 @@ $(".door-content .contentMag").click(
 );
 
 
+
 function getQuote(max) {
     'use strict';
     var arrQuotes = ["Cool your jets", "Easy tiger", "Whoa nelly", "Chill out man", "Not yet", "Step away", "Calm down dear", "Slow down dude", "Nope, not yet", "Wait your turn", "Maybe tomorrow", "Not today my friend", "Patience, patience", "Take it easy", "Wait for it", "Not so fast", "Play it cool trig"];
+
     
     arrQuotes.sort(function (a, b) {
         return (a.length - b.length);
@@ -62,6 +64,7 @@ function getQuote(max) {
 
     return arrQuotes[i];
 }
+
 
 			
 	//CREATE THE CANVAS
@@ -163,3 +166,4 @@ function getQuote(max) {
 
 
 });
+

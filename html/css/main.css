@@ -87,7 +87,11 @@ body {
         margin:0;
     }
 
- .hover{
+
+
+.hover{opacity:0;}/*set style to use when transitions aren't available */
+
+ .csstransitions .hover{
      -webkit-animation: openDoor 2.6s ease 0s  ;
      animation: openDoor 2.6s ease 0;
      -webkit-animation-fill-mode: forwards;
