@@ -185,6 +185,10 @@ body {
     .holder#day6 .door { background: white url('http://d2nyu690xzuldc.cloudfront.net/wp-content/uploads/SCR_240161_opt.jpg'); }
     #day6 .largeContent { width: 140%; height: 170%; top:-35%; left:-20%;}
         #day6 .door-content img { width:40%; }
+        
+            .holder#day9 .door { background: white url('../images/door9.jpg') 40% 60%; color: white;}
+    #day9 .largeContent { width: 250%; height: 280%; top:-35%; left:-180%;}
+        #day9 .door-content img { width:40%; }
 
     .holder#day11 .door { background: white url('../images/snow_leo_preview.jpg'); }
     #day11 .largeContent { width: 220%; height: 172%; top:-35%; left:-20%;}
